@@ -1,0 +1,191 @@
+/*scroll effect*/
+
+.navbar-trans {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: none;
+  transition: top 0.8s;
+}
+
+/*double row*/
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: block;
+  padding: 0px;
+  margin: 0px auto;
+  min-height: 25px;
+}
+
+.nav {
+  padding: 0px;
+}
+
+
+/*top nav*/
+
+.navbar-doublerow .navbar-top ul>li>a {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/*down nav*/
+
+.navbar-doublerow .navbar-down .navbar-brand {
+  padding: 0px;
+  float: left;
+  color: #fff;
+  font-size: 25px;
+}
+
+/* Logo */
+
+#logo>a {
+  font-family: "Covered By Your Grace";
+  font-display: swap;
+  font-size: 38px;
+  font-weight: bold;
+  color: #f53753 !important;
+}
+
+ul {
+  margin: 0 auto !important;
+}
+
+ul li {
+  height: 100%;
+}
+
+ul li a {
+  font-family: sans-serif;
+  font-display: swap;
+  font-size: 16px;
+  margin-left: 5vw;
+  color: #fff;
+}
+
+ul li a:hover {
+  color: #fff;
+}
+
+.navbar-down .dropdown {
+  padding: 5px;
+}
+
+.navbar-trans.afterscroll {
+  top: -100px;
+}
+
+/*nav-link  */
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+input[type="button"], input[type="submit"] {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  margin: 0;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  outline: none;
+
+}
+
+.roll-link {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  perspective: 600px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+
+.roll-link:hover {
+  text-decoration: none;
+  color: #f53753;
+}
+
+.roll-link a {
+  display: block;
+  position: relative;
+  padding: 0 2px;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.roll-link:hover a {
+  color: #f53753;
+
+  -webkit-transform: translate3d( 0px, 0px, -30px) rotateX( 90deg);
+  -moz-transform: translate3d( 0px, 0px, -30px) rotateX( 90deg);
+  -ms-transform: translate3d( 0px, 0px, -30px) rotateX( 90deg);
+  transform: translate3d( 0px, 0px, -30px) rotateX( 90deg);
+}
+
+.roll-link a:after {
+  display: block;
+  content: attr(data-title);
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  padding: 0 2px;
+  color: #f53753;
+
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: translate3d( 0px, 105%, 0px) rotateX( -90deg);
+  -moz-transform: translate3d( 0px, 105%, 0px) rotateX( -90deg);
+  -ms-transform: translate3d( 0px, 105%, 0px) rotateX( -90deg);
+  transform: translate3d( 0px, 105%, 0px) rotateX( -90deg);
+}

@@ -1,0 +1,35 @@
+h1{
+  font-family: "Covered By Your Grace";
+}
+
+/* Carousel */
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: 1.0s;
+ transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
+.carousel-caption> h2{
+  font-family: sans-serif;
+}
+
+/* Carouse end*/

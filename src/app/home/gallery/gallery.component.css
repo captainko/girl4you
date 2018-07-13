@@ -1,0 +1,13 @@
+.container-fluid {
+  margin: auto 0.5rem;
+  padding: auto 0.5rem;
+}
+.col-sm-4 {
+    padding: 0.5rem;
+}
+.col-sm-4 img {
+  width: 100%;
+}
+h1 {
+  font-family: "Covered By Your Grace";
+}
